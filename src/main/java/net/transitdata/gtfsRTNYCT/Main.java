@@ -14,7 +14,7 @@ public class Main {
         registry.add(GtfsRealtimeNYCT.nyctStopTimeUpdate);
         registry.add(GtfsRealtimeNYCT.nyctTripDescriptor);
 
-        URL url = UrlHelper.getFeedUrlFromFeedId(FeedIdEnum.BD);
+        URL url = UrlHelper.getFeedUrlFromFeedId(FeedId.BD);
 
         System.out.println("getting feed from " + url.toString());
 
@@ -26,6 +26,7 @@ public class Main {
         }
 
         if (feed != null) {
+            //noinspection CodeBlock2Expr
             feed.getEntityList()
                     .stream()
                     .filter(GtfsRealtime.FeedEntity::hasTripUpdate)

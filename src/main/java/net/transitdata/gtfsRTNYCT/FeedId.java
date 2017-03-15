@@ -17,7 +17,7 @@ package net.transitdata.gtfsRTNYCT;
  feed_id=11
   Staten Island Railway
  */
-public enum FeedIdEnum {
+public enum FeedId {
     A_DIVISION (1),
     NQRW (16),
     BD (21),
@@ -26,7 +26,7 @@ public enum FeedIdEnum {
 
     private final int value;
 
-    FeedIdEnum(int value) {
+    FeedId(int value) {
         this.value = value;
     }
 

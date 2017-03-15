@@ -8,7 +8,7 @@ public class UrlHelper {
     private static String key = System.getenv("MTA_KEY");
     private static String baseUrlWithoutFeed = "http://datamine.mta.info/mta_esi.php?key=" + key + "&feed_id=";
 
-    public static URL getFeedUrlFromFeedId(FeedIdEnum id) {
+    public static URL getFeedUrlFromFeedId(FeedId id) {
         String urlString =baseUrlWithoutFeed + id.getValue();
 
         URL url = null;
