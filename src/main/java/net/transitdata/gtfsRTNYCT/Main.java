@@ -14,7 +14,7 @@ public class Main {
         registry.add(GtfsRealtimeNYCT.nyctStopTimeUpdate);
         registry.add(GtfsRealtimeNYCT.nyctTripDescriptor);
 
-        URL url = UrlHelper.getFeedUrlFromFeedId(FeedId.BD);
+        URL url = UrlHelper.getFeedUrlFromFeedId(FeedId.FLUSHING);
 
         System.out.println("getting feed from " + url.toString());
 

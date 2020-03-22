@@ -16,13 +16,20 @@ package net.transitdata.gtfsRTNYCT;
 
  feed_id=11
   Staten Island Railway
+
+ feed_id=51
+ 7 Line (labeled FLUSHING below)
  */
 public enum FeedId {
     A_DIVISION (1),
     NQRW (16),
     BD (21),
     L (2),
-    SIR (11);
+    SIR (11),
+    G ( 31),
+    JZ (36),
+    FLUSHING (51);
+
 
     private final int value;
 
