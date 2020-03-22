@@ -7,6 +7,8 @@ Usage:
 
 2. Set your MTA developer key as an environment variable with the name "MTA_KEY", or edit UrlHelper to include your API key.
 Both IntelliJ and Eclipse offer the ability to set an environment variable in the "Run Configurations" dialog.
+    
+   This is the problem if you get the error `Protocol message tag had invalid wire type.`
 
 3. Run the Main.java class to see output.
 
