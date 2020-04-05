@@ -2,42 +2,27 @@ package net.transitdata.gtfsRTNYCT;
 
 /**
  * Helper for translating feeds to their integer ID
- feed_id=1
-  1-6, S  Lines
-
- feed_id=16
-  N Q R W  Lines (Beta Version)
-
- feed_id=21
-  B D  Lines (Beta Version)
-
- feed_id=2
-  L  Line
-
- feed_id=11
-  Staten Island Railway
-
- feed_id=51
- 7 Line (labeled FLUSHING below)
+ * 7 Line is labeled FLUSHING below
  */
 public enum FeedId {
-    A_DIVISION (1),
-    NQRW (16),
-    BD (21),
-    L (2),
-    SIR (11),
-    G ( 31),
-    JZ (36),
-    FLUSHING (51);
+    A_DIVISION("gtfs"),
+    ACE("gtfs-ace"),
+    NQRW("nqrw"),
+    BD("bd"),
+    L("l"),
+    SIR("si"), //https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-si
+    G("g"), //https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-g
+    JZ("jz"), //https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-jz
+    FLUSHING("7"); //https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-7
 
 
-    private final int value;
+    private final String value;
 
-    FeedId(int value) {
+    FeedId(String value) {
         this.value = value;
     }
 
-    public int getValue() {
+    public String getValue() {
         return value;
     }
 
